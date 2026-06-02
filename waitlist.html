@@ -22,7 +22,11 @@
     }
 
     .waitlist-hero-content {
-      max-width: 560px;
+      max-width: 600px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
     }
 
     .waitlist-hero .logo {
@@ -37,11 +41,12 @@
     }
 
     .waitlist-hero h1 {
-      font-size: 2.6rem;
+      font-size: 2.2rem;
       font-weight: 700;
       color: #fff;
       letter-spacing: -0.02em;
       margin-bottom: 8px;
+      white-space: nowrap;
     }
 
     .waitlist-hero .subtitle {
@@ -176,7 +181,8 @@
 
     @media (max-width: 640px) {
       .waitlist-hero h1 {
-        font-size: 2rem;
+        font-size: 1.5rem;
+        white-space: normal;
       }
 
       .preview-grid {
