@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Wysely Web — Join the Waitlist</title>
+  <meta name="description" content="Wysely is coming to the web. Sign up to get early access to the web app — track and analyze your betting performance from any browser.">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" type="image/png" href="assets/wysely-logo.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    .waitlist-hero {
+      background-color: #00687A;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 60px 24px;
+    }
+
+    .waitlist-hero-content {
+      max-width: 560px;
+    }
+
+    .waitlist-hero .logo {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      margin-bottom: 24px;
+      box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+      object-fit: contain;
+      background-color: #00687A;
+      padding: 10px;
+    }
+
+    .waitlist-hero h1 {
+      font-size: 2.6rem;
+      font-weight: 700;
+      color: #fff;
+      letter-spacing: -0.02em;
+      margin-bottom: 8px;
+    }
+
+    .waitlist-hero .subtitle {
+      font-size: 1.1rem;
+      font-weight: 500;
+      color: rgba(255, 255, 255, 0.85);
+      margin-bottom: 16px;
+    }
+
+    .waitlist-hero .description {
+      font-size: 1rem;
+      color: rgba(255, 255, 255, 0.75);
+      line-height: 1.7;
+      margin-bottom: 40px;
+    }
+
+    .waitlist-form {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      max-width: 400px;
+      margin: 0 auto;
+    }
+
+    .waitlist-form input[type="email"] {
+      width: 100%;
+      padding: 14px 18px;
+      border-radius: 10px;
+      border: none;
+      font-size: 1rem;
+      font-family: 'Inter', sans-serif;
+      outline: none;
+      background: rgba(255, 255, 255, 0.95);
+      color: #1a1a1a;
+    }
+
+    .waitlist-form input[type="email"]::placeholder {
+      color: #999;
+    }
+
+    .waitlist-form button {
+      width: 100%;
+      padding: 14px 18px;
+      border-radius: 10px;
+      border: none;
+      background-color: #002b33;
+      color: #fff;
+      font-size: 1rem;
+      font-weight: 600;
+      font-family: 'Inter', sans-serif;
+      cursor: pointer;
+      transition: background-color 0.2s ease, transform 0.2s ease;
+    }
+
+    .waitlist-form button:hover {
+      background-color: #003d4a;
+      transform: scale(1.02);
+    }
+
+    .waitlist-note {
+      font-size: 0.78rem;
+      color: rgba(255, 255, 255, 0.45);
+      margin-top: 12px;
+    }
+
+    .back-link {
+      display: inline-block;
+      margin-bottom: 32px;
+      color: rgba(255, 255, 255, 0.65);
+      text-decoration: none;
+      font-size: 0.85rem;
+      transition: color 0.2s ease;
+    }
+
+    .back-link:hover {
+      color: #fff;
+    }
+
+    .features-preview {
+      padding: 72px 24px;
+      background-color: #f8f9fa;
+    }
+
+    .features-preview h2 {
+      text-align: center;
+      font-size: 1.8rem;
+      font-weight: 700;
+      color: #00687A;
+      margin-bottom: 12px;
+    }
+
+    .features-preview .section-sub {
+      text-align: center;
+      font-size: 0.95rem;
+      color: #666;
+      margin-bottom: 48px;
+    }
+
+    .preview-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+      max-width: 840px;
+      margin: 0 auto;
+    }
+
+    .preview-card {
+      background: #fff;
+      padding: 28px 20px;
+      border-radius: 12px;
+      box-shadow: 0 1px 3px rgba(0, 0, 0, 0.06);
+      text-align: center;
+    }
+
+    .preview-card .icon {
+      font-size: 1.8rem;
+      margin-bottom: 10px;
+    }
+
+    .preview-card h3 {
+      font-size: 0.95rem;
+      font-weight: 600;
+      color: #00687A;
+      margin-bottom: 6px;
+    }
+
+    .preview-card p {
+      font-size: 0.85rem;
+      color: #666;
+      line-height: 1.5;
+    }
+
+    @media (max-width: 640px) {
+      .waitlist-hero h1 {
+        font-size: 2rem;
+      }
+
+      .preview-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Hero / Form Section -->
+  <section class="waitlist-hero">
+    <div class="waitlist-hero-content">
+      <a href="index.html" class="back-link">&#8592; Back to Wysely</a>
+      <img src="assets/wysely-logo.png" alt="Wysely Logo" class="logo">
+      <h1>Wysely is coming to the web.</h1>
+      <p class="subtitle">Be the first to know when it launches.</p>
+      <p class="description">
+        The same powerful bet tracking and analytics you love — now in your browser.
+        Sign up below and we'll email you the moment early access opens.
+      </p>
+
+      <form
+        action="https://formspree.io/f/YOUR_FORM_ID"
+        method="POST"
+        class="waitlist-form"
+      >
+        <input
+          type="email"
+          name="email"
+          placeholder="Enter your email address"
+          required
+          autocomplete="email"
+        />
+        <input type="hidden" name="_subject" value="New Wysely Web Waitlist Signup" />
+        <input type="hidden" name="_next" value="https://wyse-ly.com/waitlist-thanks.html" />
+        <button type="submit">Join the Waitlist</button>
+      </form>
+
+      <p class="waitlist-note">No spam. Just one email when we launch.</p>
+    </div>
+  </section>
+
+  <!-- What's Coming Section -->
+  <section class="features-preview">
+    <div class="container">
+      <h2>What to expect</h2>
+      <p class="section-sub">Everything in the iOS app, available in your browser.</p>
+      <div class="preview-grid">
+        <div class="preview-card">
+          <div class="icon">&#x1F4CA;</div>
+          <h3>Full Analytics Dashboard</h3>
+          <p>Win rate, ROI, profit/loss trends — all visible at a glance on a full desktop screen.</p>
+        </div>
+        <div class="preview-card">
+          <div class="icon">&#x1F504;</div>
+          <h3>Chrome Extension Sync</h3>
+          <p>Already using the Wysely extension? Your bets will sync directly into the web app.</p>
+        </div>
+        <div class="preview-card">
+          <div class="icon">&#x1F511;</div>
+          <h3>One Account, Both Platforms</h3>
+          <p>Your data and subscription carry over — access Wysely on iOS and web with the same login.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-brand">
+          <img src="assets/wysely-logo.png" alt="Wysely" class="footer-logo">
+          <span class="footer-name">Wysely</span>
+        </div>
+        <div class="footer-links">
+          <a href="privacy.html">Privacy Policy</a>
+          <a href="terms.html">Terms of Service</a>
+          <a href="mailto:hello@codicoventures.com">Contact Us</a>
+        </div>
+        <p class="contact-info">For all inquiries: <a href="mailto:hello@codicoventures.com">hello@codicoventures.com</a></p>
+        <p class="copyright">&copy; 2026 CoDi & Co Ventures LLC. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>

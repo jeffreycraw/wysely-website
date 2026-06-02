@@ -154,6 +154,65 @@ body {
   line-height: 1.6;
 }
 
+/* ─── Waitlist Teaser ─── */
+.waitlist-teaser {
+  background-color: #002b33;
+  padding: 72px 24px;
+  text-align: center;
+}
+
+.waitlist-teaser-content {
+  max-width: 560px;
+  margin: 0 auto;
+}
+
+.waitlist-eyebrow {
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #00687A;
+  margin-bottom: 12px;
+}
+
+.waitlist-teaser h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #fff;
+  margin-bottom: 16px;
+  letter-spacing: -0.02em;
+}
+
+.waitlist-teaser p {
+  font-size: 0.95rem;
+  color: rgba(255, 255, 255, 0.65);
+  line-height: 1.7;
+  margin-bottom: 28px;
+}
+
+.waitlist-cta-btn {
+  display: inline-block;
+  background-color: #00687A;
+  color: #fff;
+  font-size: 0.95rem;
+  font-weight: 600;
+  padding: 13px 32px;
+  border-radius: 10px;
+  text-decoration: none;
+  transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+.waitlist-cta-btn:hover {
+  background-color: #005264;
+  transform: scale(1.03);
+}
+
+@media (max-width: 640px) {
+  .waitlist-teaser h2 {
+    font-size: 1.6rem;
+  }
+}
+
 /* ─── Footer ─── */
 footer {
   background-color: #002b33;

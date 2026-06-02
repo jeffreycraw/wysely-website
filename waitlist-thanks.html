@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>You're on the list — Wysely</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" type="image/png" href="assets/wysely-logo.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    .thanks-hero {
+      background-color: #00687A;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 60px 24px;
+    }
+
+    .thanks-content {
+      max-width: 480px;
+    }
+
+    .thanks-content .logo {
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      margin-bottom: 24px;
+      box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+      object-fit: contain;
+      background-color: #00687A;
+      padding: 8px;
+    }
+
+    .checkmark {
+      font-size: 3rem;
+      margin-bottom: 16px;
+    }
+
+    .thanks-content h1 {
+      font-size: 2.2rem;
+      font-weight: 700;
+      color: #fff;
+      margin-bottom: 16px;
+      letter-spacing: -0.02em;
+    }
+
+    .thanks-content p {
+      font-size: 1rem;
+      color: rgba(255, 255, 255, 0.8);
+      line-height: 1.7;
+      margin-bottom: 36px;
+    }
+
+    .back-home-btn {
+      display: inline-block;
+      background-color: #002b33;
+      color: #fff;
+      font-size: 0.95rem;
+      font-weight: 600;
+      padding: 12px 28px;
+      border-radius: 10px;
+      text-decoration: none;
+      transition: background-color 0.2s ease, transform 0.2s ease;
+    }
+
+    .back-home-btn:hover {
+      background-color: #003d4a;
+      transform: scale(1.02);
+    }
+  </style>
+</head>
+<body>
+
+  <section class="thanks-hero">
+    <div class="thanks-content">
+      <img src="assets/wysely-logo.png" alt="Wysely Logo" class="logo">
+      <div class="checkmark">&#x2705;</div>
+      <h1>You're on the list.</h1>
+      <p>
+        We'll email you the moment Wysely Web is ready for early access.
+        In the meantime, the iOS app and Chrome extension are available now.
+      </p>
+      <a href="index.html" class="back-home-btn">Back to Wysely</a>
+    </div>
+  </section>
+
+</body>
+</html>
