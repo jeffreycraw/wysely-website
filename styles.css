@@ -89,8 +89,8 @@ body {
 .hero-cta-block {
   background-color: rgba(255, 255, 255, 0.12);
   border-radius: 16px;
-  padding: 28px 32px;
-  margin-bottom: 20px;
+  padding: 35px 32px;
+  margin-bottom: 0;
 }
 
 .hero-cta-eyebrow {
@@ -126,15 +126,11 @@ body {
   transform: scale(1.02);
 }
 
-/* ─── Hero iOS Coming Soon ─── */
-.hero-ios-block {
-  margin-top: 4px;
-}
-
 .hero-ios-text {
-  font-size: 0.85rem;
-  color: rgba(255, 255, 255, 0.45);
+  font-size: 0.82rem;
+  color: rgba(255, 255, 255, 0.55);
   font-style: italic;
+  margin-top: 16px;
 }
 
 /* ─── Features ─── */
