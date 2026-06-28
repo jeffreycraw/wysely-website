@@ -85,18 +85,54 @@ body {
   margin-bottom: 12px;
 }
 
-.app-store-btn {
+/* ─── Hero Web App CTA ─── */
+.hero-cta-block {
+  background-color: rgba(255, 255, 255, 0.12);
+  border-radius: 16px;
+  padding: 28px 32px;
+  margin-bottom: 20px;
+}
+
+.hero-cta-eyebrow {
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.65);
+  margin-bottom: 10px;
+}
+
+.hero-cta-desc {
+  font-size: 0.97rem;
+  color: rgba(255, 255, 255, 0.85);
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.hero-cta-btn {
   display: inline-block;
+  background-color: #fff;
+  color: #00687A;
+  font-weight: 600;
+  font-size: 0.97rem;
+  padding: 12px 28px;
+  border-radius: 50px;
+  text-decoration: none;
   transition: opacity 0.2s ease, transform 0.2s ease;
 }
 
-.app-store-btn:hover {
-  opacity: 0.85;
-  transform: scale(1.03);
+.hero-cta-btn:hover {
+  opacity: 0.9;
+  transform: scale(1.02);
 }
 
-.coming-soon {
-  font-size: 0.8rem;
+/* ─── Hero iOS Coming Soon ─── */
+.hero-ios-block {
+  margin-top: 4px;
+}
+
+.hero-ios-text {
+  font-size: 0.85rem;
   color: rgba(255, 255, 255, 0.45);
   font-style: italic;
 }
