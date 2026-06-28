@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Wysely Web — Join the Waitlist</title>
-  <meta name="description" content="Wysely is coming to the web. Sign up to get early access to the web app — track and analyze your betting performance from any browser.">
+  <title>Wysely — Stay in the Loop</title>
+  <meta name="description" content="Get updates on Wysely — iOS app launch, new features, and more. Enter your email to stay in the loop.">
   <link rel="stylesheet" href="styles.css">
   <link rel="icon" type="image/png" href="assets/wysely-logo.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -46,7 +46,6 @@
       color: #fff;
       letter-spacing: -0.02em;
       margin-bottom: 8px;
-      white-space: nowrap;
     }
 
     .waitlist-hero .subtitle {
@@ -68,6 +67,7 @@
       flex-direction: column;
       gap: 12px;
       max-width: 400px;
+      width: 100%;
       margin: 0 auto;
     }
 
@@ -126,12 +126,12 @@
       color: #fff;
     }
 
-    .features-preview {
+    .whats-coming {
       padding: 72px 24px;
       background-color: #f8f9fa;
     }
 
-    .features-preview h2 {
+    .whats-coming h2 {
       text-align: center;
       font-size: 1.8rem;
       font-weight: 700;
@@ -139,7 +139,7 @@
       margin-bottom: 12px;
     }
 
-    .features-preview .section-sub {
+    .whats-coming .section-sub {
       text-align: center;
       font-size: 0.95rem;
       color: #666;
@@ -180,10 +180,27 @@
       line-height: 1.5;
     }
 
+    .already-signed-up {
+      margin-top: 32px;
+      padding-top: 28px;
+      border-top: 1px solid rgba(255, 255, 255, 0.15);
+      font-size: 0.85rem;
+      color: rgba(255, 255, 255, 0.55);
+    }
+
+    .already-signed-up a {
+      color: rgba(255, 255, 255, 0.85);
+      font-weight: 600;
+      text-decoration: none;
+    }
+
+    .already-signed-up a:hover {
+      color: #fff;
+    }
+
     @media (max-width: 640px) {
       .waitlist-hero h1 {
-        font-size: 1.5rem;
-        white-space: normal;
+        font-size: 1.7rem;
       }
 
       .preview-grid {
@@ -199,11 +216,11 @@
     <div class="waitlist-hero-content">
       <img src="assets/wysely-logo.png" alt="Wysely Logo" class="logo">
       <a href="index.html" class="back-link">&#8592; Back to Wysely</a>
-      <h1>Wysely is now on the web.</h1>
-      <p class="subtitle">Early access is open — get notified about new features.</p>
+      <h1>Stay in the Loop</h1>
+      <p class="subtitle">Get updates on what's next for Wysely.</p>
       <p class="description">
-        Powerful bet tracking and analytics in your browser.<br>
-        Sign up below and we'll keep you in the loop as we build.
+        We're building fast — iOS app, new Pro features, and more on the way.
+        Drop your email and we'll keep you posted.
       </p>
 
       <form
@@ -218,35 +235,39 @@
           required
           autocomplete="email"
         />
-        <input type="hidden" name="_subject" value="New Wysely Web Waitlist Signup" />
+        <input type="hidden" name="_subject" value="New Wysely Updates Signup" />
         <input type="hidden" name="_next" value="https://wyse-ly.com/waitlist-thanks.html" />
-        <button type="submit">Join the Waitlist</button>
+        <button type="submit">Get Updates</button>
       </form>
 
-      <p class="waitlist-note">No spam. Just one email when we launch.</p>
+      <p class="waitlist-note">No spam. Just meaningful updates when they happen.</p>
+
+      <div class="already-signed-up">
+        Already want to dive in? <a href="https://app.wyse-ly.com/signup">Create a free account →</a>
+      </div>
     </div>
   </section>
 
   <!-- What's Coming Section -->
-  <section class="features-preview">
+  <section class="whats-coming">
     <div class="container">
-      <h2>What to expect</h2>
-      <p class="section-sub">Everything in the iOS app, available in your browser.</p>
+      <h2>What's coming</h2>
+      <p class="section-sub">Here's what we're working on next.</p>
       <div class="preview-grid">
         <div class="preview-card">
-          <div class="icon">&#x1F4CA;</div>
-          <h3>Full Analytics Dashboard</h3>
-          <p>Win rate, ROI, profit/loss trends — all visible at a glance on a full desktop screen.</p>
+          <div class="icon">&#x1F4F1;</div>
+          <h3>iOS App</h3>
+          <p>A native iPhone app is on the way. Same account, same data — seamless across web and mobile.</p>
+        </div>
+        <div class="preview-card">
+          <div class="icon">&#x1F4C8;</div>
+          <h3>New Pro Features</h3>
+          <p>Advanced analytics, deeper breakdowns, and more data visualizations for serious bettors.</p>
         </div>
         <div class="preview-card">
           <div class="icon">&#x1F504;</div>
-          <h3>Chrome Extension Sync</h3>
-          <p>Already using the Wysely extension? Your bets will sync directly into the web app.</p>
-        </div>
-        <div class="preview-card">
-          <div class="icon">&#x1F511;</div>
-          <h3>One Account, Both Platforms</h3>
-          <p>Your data and subscription carry over — access Wysely on iOS and web with the same login.</p>
+          <h3>More Sportsbook Sync</h3>
+          <p>Expanding beyond FanDuel and DraftKings to sync bets from more of your favorite sportsbooks.</p>
         </div>
       </div>
     </div>
