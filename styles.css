@@ -186,6 +186,49 @@ body {
   line-height: 1.6;
 }
 
+/* ─── Screenshots ─── */
+.screenshots-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 32px;
+  max-width: 780px;
+  margin: 56px auto 0;
+  align-items: start;
+}
+
+.screenshot-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 14px;
+}
+
+.screenshot-card img {
+  width: 100%;
+  max-width: 220px;
+  border-radius: 28px;
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.18);
+}
+
+.screenshot-caption {
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: #00687A;
+  text-align: center;
+  margin: 0;
+}
+
+@media (max-width: 600px) {
+  .screenshots-grid {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .screenshot-card img {
+    max-width: 280px;
+  }
+}
+
 /* ─── Waitlist Teaser ─── */
 .waitlist-teaser {
   background-color: #002b33;
