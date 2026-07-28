@@ -162,7 +162,7 @@ body {
 }
 
 .hero-appstore-badge {
-  width: 240px;
+  width: 180px;
   transition: opacity 0.2s ease, transform 0.2s ease;
 }
 
