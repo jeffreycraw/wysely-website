@@ -161,21 +161,12 @@ body {
   flex: 1;
 }
 
-.hero-appstore-btn {
-  display: inline-flex;
-  align-items: center;
-  gap: 8px;
-  background-color: #000;
-  color: #fff;
-  font-weight: 600;
-  font-size: 0.9rem;
-  padding: 11px 20px;
-  border-radius: 50px;
-  text-decoration: none;
+.hero-appstore-badge {
+  width: 160px;
   transition: opacity 0.2s ease, transform 0.2s ease;
 }
 
-.hero-appstore-btn:hover {
+.hero-appstore-badge:hover {
   opacity: 0.85;
   transform: scale(1.02);
 }
