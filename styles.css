@@ -35,7 +35,7 @@ body {
 }
 
 .hero-content {
-  max-width: 560px;
+  max-width: 780px;
 }
 
 .logo {
@@ -273,7 +273,7 @@ body {
   }
 }
 
-@media (max-width: 640px) {
+@media (max-width: 600px) {
   .hero-cta-block {
     flex-direction: column;
     gap: 28px;
