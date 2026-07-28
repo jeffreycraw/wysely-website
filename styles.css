@@ -91,6 +91,31 @@ body {
   border-radius: 16px;
   padding: 35px 32px;
   margin-bottom: 0;
+  display: flex;
+  align-items: stretch;
+  gap: 0;
+}
+
+.hero-cta-col {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  padding: 0 28px;
+}
+
+.hero-cta-col:first-child {
+  padding-left: 0;
+}
+
+.hero-cta-col:last-child {
+  padding-right: 0;
+}
+
+.hero-cta-vert-divider {
+  width: 1px;
+  background-color: rgba(255, 255, 255, 0.2);
+  flex-shrink: 0;
+  align-self: stretch;
 }
 
 .hero-cta-eyebrow {
@@ -124,12 +149,6 @@ body {
 .hero-cta-btn:hover {
   opacity: 0.9;
   transform: scale(1.02);
-}
-
-.hero-divider {
-  border: none;
-  border-top: 1px solid rgba(255, 255, 255, 0.2);
-  margin: 28px 0 24px;
 }
 
 .hero-ios-block {
@@ -251,6 +270,21 @@ body {
 @media (max-width: 900px) {
   .features-grid {
     grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 640px) {
+  .hero-cta-block {
+    flex-direction: column;
+    gap: 28px;
+  }
+  .hero-cta-col {
+    padding: 0;
+  }
+  .hero-cta-vert-divider {
+    width: auto;
+    height: 1px;
+    align-self: stretch;
   }
 }
 
